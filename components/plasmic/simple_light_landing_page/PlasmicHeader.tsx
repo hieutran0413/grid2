@@ -59,9 +59,8 @@ import {
   useGlobalActions
 } from "@plasmicapp/react-web/lib/host";
 
+import { NavigationBar } from "@plasmicpkgs/plasmic-nav";
 import Button from "../../Button"; // plasmic-import: vm52jR6x2QsO/component
-
-import { useScreenVariants as useScreenVariantsbd5Wcp8Wi5T } from "./PlasmicGlobalVariant__Screen"; // plasmic-import: Bd5wcp8wi5t-/globalVariant
 
 import "@plasmicapp/react-web/lib/plasmic.css";
 
@@ -69,9 +68,7 @@ import plasmic_library_plasmic_color_type_css from "../library_plasmic_color_typ
 import projectcss from "./plasmic.module.css"; // plasmic-import: dRBehCdEJhGHDmq2SpUGoD/projectcss
 import sty from "./PlasmicHeader.module.css"; // plasmic-import: CEpouBunSJ2e/css
 
-import LogoIcon from "./icons/PlasmicIcon__Logo"; // plasmic-import: u2jA71WoDp5x/icon
 import ChecksvgIcon from "./icons/PlasmicIcon__Checksvg"; // plasmic-import: JYoq77I0bguk/icon
-import RightArrowIcon from "./icons/PlasmicIcon__RightArrow"; // plasmic-import: AEO7-Np-ei6w/icon
 
 createPlasmicElementProxy;
 
@@ -86,8 +83,9 @@ export const PlasmicHeader__ArgProps = new Array<ArgPropType>();
 
 export type PlasmicHeader__OverridesType = {
   root?: Flex__<"div">;
-  link?: Flex__<"a"> & Partial<LinkProps>;
+  navigationBar?: Flex__<typeof NavigationBar>;
   freeBox?: Flex__<"div">;
+  button?: Flex__<typeof Button>;
 };
 
 export interface DefaultHeaderProps {
@@ -125,10 +123,6 @@ function PlasmicHeader__RenderFunc(props: {
 
   const currentUser = useCurrentUser?.() || {};
 
-  const globalVariants = ensureGlobalVariants({
-    screen: useScreenVariantsbd5Wcp8Wi5T()
-  });
-
   return (
     <div
       data-plasmic-name={"root"}
@@ -145,82 +139,179 @@ function PlasmicHeader__RenderFunc(props: {
         sty.root
       )}
     >
-      <PlasmicLink__
-        data-plasmic-name={"link"}
-        data-plasmic-override={overrides.link}
-        className={classNames(projectcss.all, projectcss.a, sty.link)}
-        component={Link}
-        href={`/`}
-        platform={"nextjs"}
-      >
-        <LogoIcon
-          className={classNames(projectcss.all, sty.svg__gl3PH)}
-          role={"img"}
-        />
-      </PlasmicLink__>
-      <Stack__
-        as={"div"}
-        data-plasmic-name={"freeBox"}
-        data-plasmic-override={overrides.freeBox}
-        hasGap={true}
-        className={classNames(projectcss.all, sty.freeBox)}
-      >
-        <Button
-          className={classNames("__wab_instance", sty.button__xDbAy)}
-          color={"clear"}
-          link={`/features`}
-          size={"compact"}
-          submitsForm={true}
-        >
-          {"Features"}
-        </Button>
-        <Button
-          className={classNames("__wab_instance", sty.button__qV2Kf)}
-          color={"clear"}
-          link={`/pricing`}
-          size={"compact"}
-          submitsForm={true}
-        >
-          {"Pricing"}
-        </Button>
-        <Button
-          className={classNames("__wab_instance", sty.button__pSoaM)}
-          color={"clear"}
-          size={"compact"}
-          submitsForm={true}
-        >
-          {"Sign in"}
-        </Button>
-        <Button
-          className={classNames("__wab_instance", sty.button___3QyRq)}
-          endIcon={
-            <RightArrowIcon
-              className={classNames(projectcss.all, sty.svg__unTo3)}
-              role={"img"}
+      <NavigationBar
+        data-plasmic-name={"navigationBar"}
+        data-plasmic-override={overrides.navigationBar}
+        brand={
+          <PlasmicLink__
+            className={classNames(
+              projectcss.all,
+              projectcss.a,
+              sty.link__w2Zx4
+            )}
+            component={Link}
+            href={"#"}
+            platform={"nextjs"}
+          >
+            <PlasmicImg__
+              alt={""}
+              className={classNames(sty.img__jadrZ)}
+              displayHeight={"40px"}
+              displayMaxHeight={"none"}
+              displayMaxWidth={"none"}
+              displayMinHeight={"0"}
+              displayMinWidth={"0"}
+              displayWidth={"auto"}
+              src={{
+                src: "/plasmic/simple_light_landing_page/images/logoOriginal2Png.png",
+                fullWidth: 330,
+                fullHeight: 124,
+                aspectRatio: undefined
+              }}
             />
-          }
-          showEndIcon={true}
-          submitsForm={true}
-        >
-          {"Sign up"}
-        </Button>
-      </Stack__>
+          </PlasmicLink__>
+        }
+        className={classNames("__wab_instance", sty.navigationBar)}
+        closeButton={
+          <PlasmicImg__
+            alt={""}
+            className={classNames(sty.img__iiJbJ)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"none"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            src={"https://static1.plasmic.app/close.svg"}
+          />
+        }
+        itemsGap={8}
+        menuItems={
+          <Stack__
+            as={"div"}
+            data-plasmic-name={"freeBox"}
+            data-plasmic-override={overrides.freeBox}
+            hasGap={true}
+            className={classNames(projectcss.all, sty.freeBox)}
+          >
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link__gAomh
+              )}
+              component={Link}
+              href={"/"}
+              platform={"nextjs"}
+            >
+              {"Home"}
+            </PlasmicLink__>
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link__aRCu
+              )}
+              component={Link}
+              href={"/"}
+              platform={"nextjs"}
+            >
+              {"About"}
+            </PlasmicLink__>
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link__juaXe
+              )}
+              component={Link}
+              href={"/"}
+              platform={"nextjs"}
+            >
+              {"Contact"}
+            </PlasmicLink__>
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link__k8GF9
+              )}
+              component={Link}
+              href={"/"}
+              platform={"nextjs"}
+            >
+              {"Contact"}
+            </PlasmicLink__>
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link__mvTwO
+              )}
+              component={Link}
+              href={"/"}
+              platform={"nextjs"}
+            >
+              {"Contact"}
+            </PlasmicLink__>
+            <PlasmicLink__
+              className={classNames(
+                projectcss.all,
+                projectcss.a,
+                projectcss.__wab_text,
+                sty.link__i0GS
+              )}
+              component={Link}
+              href={"/"}
+              platform={"nextjs"}
+            >
+              {"Contact"}
+            </PlasmicLink__>
+            <Button
+              data-plasmic-name={"button"}
+              data-plasmic-override={overrides.button}
+              className={classNames("__wab_instance", sty.button)}
+            />
+          </Stack__>
+        }
+        openButton={
+          <PlasmicImg__
+            alt={""}
+            className={classNames(sty.img__oRxEc)}
+            displayHeight={"auto"}
+            displayMaxHeight={"none"}
+            displayMaxWidth={"none"}
+            displayMinHeight={"0"}
+            displayMinWidth={"0"}
+            displayWidth={"auto"}
+            src={"https://static1.plasmic.app/menu.svg"}
+          />
+        }
+        responsiveBreakpoint={768}
+      />
     </div>
   ) as React.ReactElement | null;
 }
 
 const PlasmicDescendants = {
-  root: ["root", "link", "freeBox"],
-  link: ["link"],
-  freeBox: ["freeBox"]
+  root: ["root", "navigationBar", "freeBox", "button"],
+  navigationBar: ["navigationBar", "freeBox", "button"],
+  freeBox: ["freeBox", "button"],
+  button: ["button"]
 } as const;
 type NodeNameType = keyof typeof PlasmicDescendants;
 type DescendantsType<T extends NodeNameType> =
   (typeof PlasmicDescendants)[T][number];
 type NodeDefaultElementType = {
   root: "div";
-  link: "a";
+  navigationBar: typeof NavigationBar;
   freeBox: "div";
+  button: typeof Button;
 };
 
 type ReservedPropsType = "variants" | "args" | "overrides";
@@ -283,8 +374,9 @@ export const PlasmicHeader = Object.assign(
   makeNodeComponent("root"),
   {
     // Helper components rendering sub-elements
-    link: makeNodeComponent("link"),
+    navigationBar: makeNodeComponent("navigationBar"),
     freeBox: makeNodeComponent("freeBox"),
+    button: makeNodeComponent("button"),
 
     // Metadata about props expected for PlasmicHeader
     internalVariantProps: PlasmicHeader__VariantProps,
