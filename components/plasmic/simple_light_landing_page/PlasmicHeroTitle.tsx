@@ -160,7 +160,7 @@ function PlasmicHeroTitle__RenderFunc(props: {
               sty.text__fqbEl
             )}
           >
-            {"Web3 gaming"}
+            {"Web3 gaminssssssssss"}
           </div>
         </Stack__>
         <Stack__
