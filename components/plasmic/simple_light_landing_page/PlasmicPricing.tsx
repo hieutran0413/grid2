@@ -169,6 +169,137 @@ function PlasmicPricing__RenderFunc(props: {
           <Section
             data-plasmic-name={"pricingSection"}
             data-plasmic-override={overrides.pricingSection}
+            children2={
+              <Stack__
+                as={"div"}
+                data-plasmic-name={"columns"}
+                data-plasmic-override={overrides.columns}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.columns)}
+              >
+                <div className={classNames(projectcss.all, sty.column__gy7Sg)}>
+                  <Plan
+                    className={classNames("__wab_instance", sty.plan__v6Lez)}
+                    price={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__fIzSl
+                        )}
+                      >
+                        {"$10"}
+                      </div>
+                    }
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__jxsbl
+                      )}
+                      color={"outlineBlue"}
+                      submitsForm={true}
+                    >
+                      {"Get started"}
+                    </Button>
+                  </Plan>
+                </div>
+                <div className={classNames(projectcss.all, sty.column__cwT60)}>
+                  <Plan
+                    className={classNames("__wab_instance", sty.plan__nnrZp)}
+                    description={
+                      <Stack__
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__lqev2
+                        )}
+                      >
+                        <Bullet
+                          className={classNames(
+                            "__wab_instance",
+                            sty.bullet__j3N1N
+                          )}
+                        />
+
+                        <Bullet
+                          className={classNames(
+                            "__wab_instance",
+                            sty.bullet__gFOtW
+                          )}
+                        />
+
+                        <Bullet
+                          className={classNames(
+                            "__wab_instance",
+                            sty.bullet__b7N7J
+                          )}
+                        />
+
+                        <Bullet
+                          className={classNames(
+                            "__wab_instance",
+                            sty.bullet__yzo9E
+                          )}
+                        />
+                      </Stack__>
+                    }
+                    name={"Team"}
+                    price={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__w8G5P
+                        )}
+                      >
+                        {"$49"}
+                      </div>
+                    }
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__rZWq2
+                      )}
+                      color={"blue"}
+                      submitsForm={true}
+                    >
+                      {"Get started"}
+                    </Button>
+                  </Plan>
+                </div>
+                <div className={classNames(projectcss.all, sty.column__k8PiQ)}>
+                  <Plan
+                    className={classNames("__wab_instance", sty.plan___72MOm)}
+                    name={"Enterprise"}
+                    price={
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___9Udt
+                        )}
+                      >
+                        {"$199"}
+                      </div>
+                    }
+                  >
+                    <Button
+                      className={classNames(
+                        "__wab_instance",
+                        sty.button__gl2Ey
+                      )}
+                      color={"outlineBlue"}
+                      submitsForm={true}
+                    >
+                      {"Get started"}
+                    </Button>
+                  </Plan>
+                </div>
+              </Stack__>
+            }
             className={classNames("__wab_instance", sty.pricingSection)}
             hasSubtitle={true}
             hasTitle={true}
@@ -176,128 +307,43 @@ function PlasmicPricing__RenderFunc(props: {
               "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat."
             }
             title={"Pricing"}
-          >
-            <Stack__
-              as={"div"}
-              data-plasmic-name={"columns"}
-              data-plasmic-override={overrides.columns}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.columns)}
-            >
-              <div className={classNames(projectcss.all, sty.column__gy7Sg)}>
-                <Plan
-                  className={classNames("__wab_instance", sty.plan__v6Lez)}
-                  price={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__fIzSl
-                      )}
-                    >
-                      {"$10"}
-                    </div>
-                  }
-                >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__jxsbl)}
-                    color={"outlineBlue"}
-                    submitsForm={true}
-                  >
-                    {"Get started"}
-                  </Button>
-                </Plan>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__cwT60)}>
-                <Plan
-                  className={classNames("__wab_instance", sty.plan__nnrZp)}
-                  description={
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__lqev2)}
-                    >
-                      <Bullet
-                        className={classNames(
-                          "__wab_instance",
-                          sty.bullet__j3N1N
-                        )}
-                      />
+          />
 
-                      <Bullet
-                        className={classNames(
-                          "__wab_instance",
-                          sty.bullet__gFOtW
-                        )}
-                      />
-
-                      <Bullet
-                        className={classNames(
-                          "__wab_instance",
-                          sty.bullet__b7N7J
-                        )}
-                      />
-
-                      <Bullet
-                        className={classNames(
-                          "__wab_instance",
-                          sty.bullet__yzo9E
-                        )}
-                      />
-                    </Stack__>
-                  }
-                  name={"Team"}
-                  price={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__w8G5P
-                      )}
-                    >
-                      {"$49"}
-                    </div>
-                  }
-                >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__rZWq2)}
-                    color={"blue"}
-                    submitsForm={true}
-                  >
-                    {"Get started"}
-                  </Button>
-                </Plan>
-              </div>
-              <div className={classNames(projectcss.all, sty.column__k8PiQ)}>
-                <Plan
-                  className={classNames("__wab_instance", sty.plan___72MOm)}
-                  name={"Enterprise"}
-                  price={
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___9Udt
-                      )}
-                    >
-                      {"$199"}
-                    </div>
-                  }
-                >
-                  <Button
-                    className={classNames("__wab_instance", sty.button__gl2Ey)}
-                    color={"outlineBlue"}
-                    submitsForm={true}
-                  >
-                    {"Get started"}
-                  </Button>
-                </Plan>
-              </div>
-            </Stack__>
-          </Section>
           <Section
             data-plasmic-name={"faqSection"}
             data-plasmic-override={overrides.faqSection}
+            children2={
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__f60N)}
+              >
+                <Faq
+                  className={classNames("__wab_instance", sty.faq__cejiY)}
+                  slot={
+                    "Yes! You can. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat."
+                  }
+                >
+                  {"Are there long-term contracts?"}
+                </Faq>
+                <Faq
+                  className={classNames("__wab_instance", sty.faq__hu2F9)}
+                  slot={
+                    "Yes! You can. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat."
+                  }
+                >
+                  {"Can I add or remove licenses?"}
+                </Faq>
+                <Faq
+                  className={classNames("__wab_instance", sty.faq___64K6R)}
+                  slot={
+                    "Yes! You can. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat."
+                  }
+                >
+                  {"Do you offer refunds?"}
+                </Faq>
+              </Stack__>
+            }
             className={classNames("__wab_instance", sty.faqSection)}
             hasSubtitle={true}
             hasTitle={true}
@@ -305,38 +351,8 @@ function PlasmicPricing__RenderFunc(props: {
               "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat."
             }
             title={"FAQ"}
-          >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__f60N)}
-            >
-              <Faq
-                className={classNames("__wab_instance", sty.faq__cejiY)}
-                slot={
-                  "Yes! You can. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat."
-                }
-              >
-                {"Are there long-term contracts?"}
-              </Faq>
-              <Faq
-                className={classNames("__wab_instance", sty.faq__hu2F9)}
-                slot={
-                  "Yes! You can. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat."
-                }
-              >
-                {"Can I add or remove licenses?"}
-              </Faq>
-              <Faq
-                className={classNames("__wab_instance", sty.faq___64K6R)}
-                slot={
-                  "Yes! You can. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat."
-                }
-              >
-                {"Do you offer refunds?"}
-              </Faq>
-            </Stack__>
-          </Section>
+          />
+
           <Footer
             data-plasmic-name={"footer"}
             data-plasmic-override={overrides.footer}

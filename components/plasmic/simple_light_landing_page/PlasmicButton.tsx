@@ -78,6 +78,7 @@ export type PlasmicButton__VariantMembers = {
   shape: "rounded";
   size: "compact";
   color: "blue" | "red" | "outlineBlue" | "outlineRed" | "clear";
+  unnamedGroupOfVariants: "unnamedVariant2" | "getStart" | "unnamedVariant";
 };
 export type PlasmicButton__VariantsArgs = {
   showStartIcon?: SingleBooleanChoiceArg<"showStartIcon">;
@@ -88,6 +89,9 @@ export type PlasmicButton__VariantsArgs = {
   color?: SingleChoiceArg<
     "blue" | "red" | "outlineBlue" | "outlineRed" | "clear"
   >;
+  unnamedGroupOfVariants?: SingleChoiceArg<
+    "unnamedVariant2" | "getStart" | "unnamedVariant"
+  >;
 };
 type VariantPropType = keyof PlasmicButton__VariantsArgs;
 export const PlasmicButton__VariantProps = new Array<VariantPropType>(
@@ -96,7 +100,8 @@ export const PlasmicButton__VariantProps = new Array<VariantPropType>(
   "isDisabled",
   "shape",
   "size",
-  "color"
+  "color",
+  "unnamedGroupOfVariants"
 );
 
 export type PlasmicButton__ArgsType = {
@@ -131,6 +136,9 @@ export interface DefaultButtonProps extends pp.BaseButtonProps {
   size?: SingleChoiceArg<"compact">;
   color?: SingleChoiceArg<
     "blue" | "red" | "outlineBlue" | "outlineRed" | "clear"
+  >;
+  unnamedGroupOfVariants?: SingleChoiceArg<
+    "unnamedVariant2" | "getStart" | "unnamedVariant"
   >;
 }
 
@@ -202,6 +210,13 @@ function PlasmicButton__RenderFunc(props: {
         type: "private",
         variableType: "variant",
         initFunc: ({ $props, $state, $queries, $ctx }) => $props.color
+      },
+      {
+        path: "unnamedGroupOfVariants",
+        type: "private",
+        variableType: "variant",
+        initFunc: ({ $props, $state, $queries, $ctx }) =>
+          $props.unnamedGroupOfVariants
       }
     ],
     [$props, $ctx, $refs]
@@ -280,65 +295,70 @@ function PlasmicButton__RenderFunc(props: {
           [sty.rootsize_compact_showStartIcon_showEndIcon]:
             hasVariant($state, "size", "compact") &&
             hasVariant($state, "showStartIcon", "showStartIcon") &&
-            hasVariant($state, "showEndIcon", "showEndIcon")
+            hasVariant($state, "showEndIcon", "showEndIcon"),
+          [sty.rootunnamedGroupOfVariants_unnamedVariant]: hasVariant(
+            $state,
+            "unnamedGroupOfVariants",
+            "unnamedVariant"
+          )
         }
       )}
+      disabled={false}
+      tabIndex={1}
       data-plasmic-trigger-props={[triggerRootFocusVisibleWithinProps]}
     >
-      {(hasVariant($state, "showStartIcon", "showStartIcon") ? true : false) ? (
-        <div
-          data-plasmic-name={"startIconContainer"}
-          data-plasmic-override={overrides.startIconContainer}
-          className={classNames(projectcss.all, sty.startIconContainer, {
-            [sty.startIconContainercolor_blue]: hasVariant(
+      <div
+        data-plasmic-name={"startIconContainer"}
+        data-plasmic-override={overrides.startIconContainer}
+        className={classNames(projectcss.all, sty.startIconContainer, {
+          [sty.startIconContainercolor_blue]: hasVariant(
+            $state,
+            "color",
+            "blue"
+          ),
+          [sty.startIconContainershowStartIcon]: hasVariant(
+            $state,
+            "showStartIcon",
+            "showStartIcon"
+          ),
+          [sty.startIconContainershowStartIcon_shape_rounded]:
+            hasVariant($state, "shape", "rounded") &&
+            hasVariant($state, "showStartIcon", "showStartIcon")
+        })}
+      >
+        {renderPlasmicSlot({
+          defaultContents: (
+            <ChecksvgIcon
+              className={classNames(projectcss.all, sty.svg__oXqVg)}
+              role={"img"}
+            />
+          ),
+
+          value: args.startIcon,
+          className: classNames(sty.slotTargetStartIcon, {
+            [sty.slotTargetStartIconcolor_blue]: hasVariant(
               $state,
               "color",
               "blue"
             ),
-            [sty.startIconContainershowStartIcon]: hasVariant(
+            [sty.slotTargetStartIconcolor_outlineBlue]: hasVariant(
+              $state,
+              "color",
+              "outlineBlue"
+            ),
+            [sty.slotTargetStartIconcolor_outlineRed]: hasVariant(
+              $state,
+              "color",
+              "outlineRed"
+            ),
+            [sty.slotTargetStartIconshowStartIcon]: hasVariant(
               $state,
               "showStartIcon",
               "showStartIcon"
-            ),
-            [sty.startIconContainershowStartIcon_shape_rounded]:
-              hasVariant($state, "shape", "rounded") &&
-              hasVariant($state, "showStartIcon", "showStartIcon")
-          })}
-        >
-          {renderPlasmicSlot({
-            defaultContents: (
-              <ChecksvgIcon
-                className={classNames(projectcss.all, sty.svg__oXqVg)}
-                role={"img"}
-              />
-            ),
-
-            value: args.startIcon,
-            className: classNames(sty.slotTargetStartIcon, {
-              [sty.slotTargetStartIconcolor_blue]: hasVariant(
-                $state,
-                "color",
-                "blue"
-              ),
-              [sty.slotTargetStartIconcolor_outlineBlue]: hasVariant(
-                $state,
-                "color",
-                "outlineBlue"
-              ),
-              [sty.slotTargetStartIconcolor_outlineRed]: hasVariant(
-                $state,
-                "color",
-                "outlineRed"
-              ),
-              [sty.slotTargetStartIconshowStartIcon]: hasVariant(
-                $state,
-                "showStartIcon",
-                "showStartIcon"
-              )
-            })
-          })}
-        </div>
-      ) : null}
+            )
+          })
+        })}
+      </div>
       <div
         data-plasmic-name={"contentContainer"}
         data-plasmic-override={overrides.contentContainer}
@@ -412,51 +432,51 @@ function PlasmicButton__RenderFunc(props: {
               $state,
               "showStartIcon",
               "showStartIcon"
-            )
+            ),
+            [sty.slotTargetChildrenunnamedGroupOfVariants_unnamedVariant]:
+              hasVariant($state, "unnamedGroupOfVariants", "unnamedVariant")
           })
         })}
       </div>
-      {(hasVariant($state, "showEndIcon", "showEndIcon") ? true : false) ? (
-        <div
-          data-plasmic-name={"endIconContainer"}
-          data-plasmic-override={overrides.endIconContainer}
-          className={classNames(projectcss.all, sty.endIconContainer, {
-            [sty.endIconContainershowEndIcon]: hasVariant(
+      <div
+        data-plasmic-name={"endIconContainer"}
+        data-plasmic-override={overrides.endIconContainer}
+        className={classNames(projectcss.all, sty.endIconContainer, {
+          [sty.endIconContainershowEndIcon]: hasVariant(
+            $state,
+            "showEndIcon",
+            "showEndIcon"
+          )
+        })}
+      >
+        {renderPlasmicSlot({
+          defaultContents: (
+            <ChecksvgIcon
+              className={classNames(projectcss.all, sty.svg__yee19)}
+              role={"img"}
+            />
+          ),
+
+          value: args.endIcon,
+          className: classNames(sty.slotTargetEndIcon, {
+            [sty.slotTargetEndIconcolor_outlineBlue]: hasVariant(
+              $state,
+              "color",
+              "outlineBlue"
+            ),
+            [sty.slotTargetEndIconcolor_outlineRed]: hasVariant(
+              $state,
+              "color",
+              "outlineRed"
+            ),
+            [sty.slotTargetEndIconshowEndIcon]: hasVariant(
               $state,
               "showEndIcon",
               "showEndIcon"
             )
-          })}
-        >
-          {renderPlasmicSlot({
-            defaultContents: (
-              <ChecksvgIcon
-                className={classNames(projectcss.all, sty.svg__yee19)}
-                role={"img"}
-              />
-            ),
-
-            value: args.endIcon,
-            className: classNames(sty.slotTargetEndIcon, {
-              [sty.slotTargetEndIconcolor_outlineBlue]: hasVariant(
-                $state,
-                "color",
-                "outlineBlue"
-              ),
-              [sty.slotTargetEndIconcolor_outlineRed]: hasVariant(
-                $state,
-                "color",
-                "outlineRed"
-              ),
-              [sty.slotTargetEndIconshowEndIcon]: hasVariant(
-                $state,
-                "showEndIcon",
-                "showEndIcon"
-              )
-            })
-          })}
-        </div>
-      ) : null}
+          })
+        })}
+      </div>
     </Stack__>
   ) as React.ReactElement | null;
 }

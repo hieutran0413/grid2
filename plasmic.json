@@ -269,6 +269,19 @@
           "scheme": "blackbox",
           "componentType": "component",
           "plumeType": "text-input"
+        },
+        {
+          "id": "b8ewyzpY3SVG",
+          "name": "HeroTitle",
+          "type": "managed",
+          "projectId": "dRBehCdEJhGHDmq2SpUGoD",
+          "renderModuleFilePath": "plasmic/simple_light_landing_page/PlasmicHeroTitle.tsx",
+          "importSpec": {
+            "modulePath": "HeroTitle.tsx"
+          },
+          "cssFilePath": "plasmic/simple_light_landing_page/PlasmicHeroTitle.module.css",
+          "scheme": "blackbox",
+          "componentType": "component"
         }
       ],
       "icons": [
@@ -408,6 +421,16 @@
           "id": "MIc3HytqLqKC",
           "name": "Logo Original2.png",
           "filePath": "../public/plasmic/simple_light_landing_page/images/logoOriginal2Png.png"
+        },
+        {
+          "id": "oojG7cW4qyni",
+          "name": "hinton-plot 1.svg",
+          "filePath": "../public/plasmic/simple_light_landing_page/images/hintonPlot1Svg.svg"
+        },
+        {
+          "id": "HC4SfIq0DXQd",
+          "name": "hinton-plot 1.png",
+          "filePath": "../public/plasmic/simple_light_landing_page/images/hintonPlot1Png.png"
         }
       ],
       "indirect": false,
@@ -447,6 +470,65 @@
           "name": "NavigationBar",
           "displayName": "hostless-plasmic-navigation-bar",
           "componentImportPath": "@plasmicpkgs/plasmic-nav"
+        }
+      ],
+      "customFunctions": [],
+      "jsBundleThemes": []
+    },
+    {
+      "projectId": "caTPwKxj5ZrD9LQ7DMdK4Z",
+      "projectApiToken": "vXGGQpdi9fhcncabBdg8DcMRUbkz0iRW6HS1jzQufQR6QH0MasPwr9SX7ap4SsK3xXwwXmzZtglWGe0Rm2nw",
+      "projectName": "plasmic-basic-components",
+      "version": ">0.0.0",
+      "cssFilePath": "plasmic/plasmic_basic_components/plasmic.module.css",
+      "components": [],
+      "icons": [],
+      "images": [],
+      "indirect": true,
+      "globalContextsFilePath": "",
+      "splitsProviderFilePath": "",
+      "codeComponents": [
+        {
+          "id": "CMDBvOhaI4s",
+          "name": "Iframe",
+          "displayName": "hostless-iframe",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "RhitNJW5Zu-",
+          "name": "Video",
+          "displayName": "hostless-html-video",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "PKldDYkH42",
+          "name": "Embed",
+          "displayName": "hostless-embed",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "D4RbnlpRXg3",
+          "name": "DataProvider",
+          "displayName": "hostless-data-provider",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "zlBHsvkFlN",
+          "name": "ConditionGuard",
+          "displayName": "hostless-condition-guard",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "K-mWGqrHefEp",
+          "name": "SideEffect",
+          "displayName": "hostless-side-effect",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
+        },
+        {
+          "id": "SpkzmXJqg27p",
+          "name": "Timer",
+          "displayName": "hostless-timer",
+          "componentImportPath": "@plasmicpkgs/plasmic-basic-components"
         }
       ],
       "customFunctions": []

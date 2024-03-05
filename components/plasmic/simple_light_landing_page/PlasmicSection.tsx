@@ -85,13 +85,13 @@ export const PlasmicSection__VariantProps = new Array<VariantPropType>(
 );
 
 export type PlasmicSection__ArgsType = {
-  children?: React.ReactNode;
+  children2?: React.ReactNode;
   subtitle?: React.ReactNode;
   title?: React.ReactNode;
 };
 type ArgPropType = keyof PlasmicSection__ArgsType;
 export const PlasmicSection__ArgProps = new Array<ArgPropType>(
-  "children",
+  "children2",
   "subtitle",
   "title"
 );
@@ -105,7 +105,7 @@ export type PlasmicSection__OverridesType = {
 };
 
 export interface DefaultSectionProps {
-  children?: React.ReactNode;
+  children2?: React.ReactNode;
   subtitle?: React.ReactNode;
   title?: React.ReactNode;
   color?: SingleChoiceArg<"halfDark" | "dark">;
@@ -226,11 +226,13 @@ function PlasmicSection__RenderFunc(props: {
             )
           })}
         >
-          {renderPlasmicSlot({
-            defaultContents: "Title",
-            value: args.title,
-            className: classNames(sty.slotTargetTitle)
-          })}
+          {false
+            ? renderPlasmicSlot({
+                defaultContents: "Title",
+                value: args.title,
+                className: classNames(sty.slotTargetTitle)
+              })
+            : null}
         </div>
         <div
           data-plasmic-name={"subtitleContainer"}
@@ -270,7 +272,7 @@ function PlasmicSection__RenderFunc(props: {
         >
           {renderPlasmicSlot({
             defaultContents: null,
-            value: args.children
+            value: args.children2
           })}
         </div>
       </Stack__>

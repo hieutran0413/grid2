@@ -78,6 +78,7 @@
 }
 .button__uvfhR:global(.__wab_instance) {
   position: relative;
+  flex-shrink: 0;
 }
 .svg__wy0Sm {
   position: relative;
@@ -85,7 +86,7 @@
   width: 24px;
   height: 24px;
 }
-.svg__ui9T9 {
+.svg__wkj24 {
   position: relative;
   object-fit: cover;
   width: 24px;

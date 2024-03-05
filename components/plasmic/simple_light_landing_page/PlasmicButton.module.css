@@ -6,9 +6,11 @@
   cursor: pointer;
   transition-property: background;
   transition-duration: 0.1s;
+  height: 36px;
+  margin-right: 66px;
   -webkit-transition-property: background;
   -webkit-transition-duration: 0.1s;
-  border-radius: 6px;
+  border-radius: 2px;
   padding: 10px 20px;
   border-width: 0px;
 }
@@ -45,7 +47,13 @@
   padding: 6px 12px;
 }
 .rootcolor_blue {
-  background: var(--token-p-fCTrfjtL4);
+  background: radial-gradient(
+    ellipse 61% 100% at 50% 100%,
+    #6277ff 0%,
+    #2440ff 100%
+  );
+  margin-right: 87px;
+  margin-left: 87px;
 }
 .rootcolor_red {
   background: #e54d2e;
@@ -118,11 +126,11 @@
   background: var(--token-3dsm_UqzX);
 }
 .startIconContainer {
-  display: flex;
   position: relative;
   flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
+  display: none;
 }
 .startIconContainershowStartIcon {
   display: flex;
@@ -156,8 +164,9 @@
 .slotTargetChildren {
   color: var(--token-E0ea1zz9pqwe);
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   white-space: pre;
+  font-family: "IBM Plex Sans", sans-serif;
 }
 .slotTargetChildrencolor_blue {
   color: #ffffff;
@@ -239,11 +248,11 @@
   outline: none;
 }
 .endIconContainer {
-  display: flex;
   position: relative;
   flex-direction: row;
   align-items: stretch;
   justify-content: flex-start;
+  display: none;
 }
 .endIconContainershowEndIcon {
   display: flex;

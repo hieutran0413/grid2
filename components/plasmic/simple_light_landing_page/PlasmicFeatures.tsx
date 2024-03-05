@@ -167,6 +167,246 @@ function PlasmicFeatures__RenderFunc(props: {
           <Section
             data-plasmic-name={"section"}
             data-plasmic-override={overrides.section}
+            children2={
+              <Stack__
+                as={"div"}
+                hasGap={true}
+                className={classNames(projectcss.all, sty.freeBox__eBz0K)}
+              >
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.columns__oAeai)}
+                >
+                  <div className={classNames(projectcss.all, sty.column__kAiE)}>
+                    <Stack__
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__mVjGc)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__cxyq0
+                        )}
+                      >
+                        {"Powerful suite of tools"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__hmBxe
+                        )}
+                      >
+                        {
+                          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur."
+                        }
+                      </div>
+                      <Bullet
+                        className={classNames(
+                          "__wab_instance",
+                          sty.bullet__cYoYq
+                        )}
+                      />
+
+                      <Bullet
+                        className={classNames(
+                          "__wab_instance",
+                          sty.bullet__gXMy
+                        )}
+                      />
+
+                      <Bullet
+                        className={classNames(
+                          "__wab_instance",
+                          sty.bullet__gH7VE
+                        )}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__nDd2H
+                        )}
+                      >
+                        {
+                          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur."
+                        }
+                      </div>
+                      <Stack__
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__lnOgx
+                        )}
+                      >
+                        <Button
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button__f6PRy
+                          )}
+                          color={"blue"}
+                          submitsForm={true}
+                        >
+                          {"Start free trial"}
+                        </Button>
+                        <Button
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button__nJ9Vm
+                          )}
+                          color={"outlineBlue"}
+                          submitsForm={true}
+                        >
+                          {"View demo"}
+                        </Button>
+                      </Stack__>
+                    </Stack__>
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.column__q65R4)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__l5Cng)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"none"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"100%"}
+                      src={{
+                        src: "/plasmic/simple_light_landing_page/images/simpleProject.png",
+                        fullWidth: 1000,
+                        fullHeight: 924,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+                </Stack__>
+                <Stack__
+                  as={"div"}
+                  hasGap={true}
+                  className={classNames(projectcss.all, sty.columns__uuPt)}
+                >
+                  <div
+                    className={classNames(projectcss.all, sty.column__j4DY9)}
+                  >
+                    <PlasmicImg__
+                      alt={""}
+                      className={classNames(sty.img__fcRUg)}
+                      displayHeight={"auto"}
+                      displayMaxHeight={"none"}
+                      displayMaxWidth={"none"}
+                      displayMinHeight={"0"}
+                      displayMinWidth={"0"}
+                      displayWidth={"100%"}
+                      src={{
+                        src: "/plasmic/simple_light_landing_page/images/simpleProject.png",
+                        fullWidth: 1000,
+                        fullHeight: 924,
+                        aspectRatio: undefined
+                      }}
+                    />
+                  </div>
+                  <div
+                    className={classNames(projectcss.all, sty.column__nRwB3)}
+                  >
+                    <Stack__
+                      as={"div"}
+                      hasGap={true}
+                      className={classNames(projectcss.all, sty.freeBox__odKu)}
+                    >
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text___0E3Na
+                        )}
+                      >
+                        {"Powerful suite of tools"}
+                      </div>
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__xfaTm
+                        )}
+                      >
+                        {
+                          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur."
+                        }
+                      </div>
+                      <Bullet
+                        className={classNames(
+                          "__wab_instance",
+                          sty.bullet__ndLJn
+                        )}
+                      />
+
+                      <Bullet
+                        className={classNames(
+                          "__wab_instance",
+                          sty.bullet__fuxqv
+                        )}
+                      />
+
+                      <Bullet
+                        className={classNames(
+                          "__wab_instance",
+                          sty.bullet___1Vtge
+                        )}
+                      />
+
+                      <div
+                        className={classNames(
+                          projectcss.all,
+                          projectcss.__wab_text,
+                          sty.text__nxhd9
+                        )}
+                      >
+                        {
+                          "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur."
+                        }
+                      </div>
+                      <Stack__
+                        as={"div"}
+                        hasGap={true}
+                        className={classNames(
+                          projectcss.all,
+                          sty.freeBox__gtsUv
+                        )}
+                      >
+                        <Button
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button__mr2Db
+                          )}
+                          color={"blue"}
+                          submitsForm={true}
+                        >
+                          {"Start free trial"}
+                        </Button>
+                        <Button
+                          className={classNames(
+                            "__wab_instance",
+                            sty.button__anjNs
+                          )}
+                          color={"outlineBlue"}
+                          submitsForm={true}
+                        >
+                          {"View demo"}
+                        </Button>
+                      </Stack__>
+                    </Stack__>
+                  </div>
+                </Stack__>
+              </Stack__>
+            }
             className={classNames("__wab_instance", sty.section)}
             hasSubtitle={true}
             hasTitle={true}
@@ -174,231 +414,8 @@ function PlasmicFeatures__RenderFunc(props: {
               "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat."
             }
             title={"The ultimate in feature set."}
-          >
-            <Stack__
-              as={"div"}
-              hasGap={true}
-              className={classNames(projectcss.all, sty.freeBox__eBz0K)}
-            >
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.columns__oAeai)}
-              >
-                <div className={classNames(projectcss.all, sty.column__kAiE)}>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__mVjGc)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__cxyq0
-                      )}
-                    >
-                      {"Powerful suite of tools"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__hmBxe
-                      )}
-                    >
-                      {
-                        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur."
-                      }
-                    </div>
-                    <Bullet
-                      className={classNames(
-                        "__wab_instance",
-                        sty.bullet__cYoYq
-                      )}
-                    />
+          />
 
-                    <Bullet
-                      className={classNames("__wab_instance", sty.bullet__gXMy)}
-                    />
-
-                    <Bullet
-                      className={classNames(
-                        "__wab_instance",
-                        sty.bullet__gH7VE
-                      )}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__nDd2H
-                      )}
-                    >
-                      {
-                        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur."
-                      }
-                    </div>
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__lnOgx)}
-                    >
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__f6PRy
-                        )}
-                        color={"blue"}
-                        submitsForm={true}
-                      >
-                        {"Start free trial"}
-                      </Button>
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__nJ9Vm
-                        )}
-                        color={"outlineBlue"}
-                        submitsForm={true}
-                      >
-                        {"View demo"}
-                      </Button>
-                    </Stack__>
-                  </Stack__>
-                </div>
-                <div className={classNames(projectcss.all, sty.column__q65R4)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__l5Cng)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"none"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    src={{
-                      src: "/plasmic/simple_light_landing_page/images/simpleProject.png",
-                      fullWidth: 1000,
-                      fullHeight: 924,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </div>
-              </Stack__>
-              <Stack__
-                as={"div"}
-                hasGap={true}
-                className={classNames(projectcss.all, sty.columns__uuPt)}
-              >
-                <div className={classNames(projectcss.all, sty.column__j4DY9)}>
-                  <PlasmicImg__
-                    alt={""}
-                    className={classNames(sty.img__fcRUg)}
-                    displayHeight={"auto"}
-                    displayMaxHeight={"none"}
-                    displayMaxWidth={"none"}
-                    displayMinHeight={"0"}
-                    displayMinWidth={"0"}
-                    displayWidth={"100%"}
-                    src={{
-                      src: "/plasmic/simple_light_landing_page/images/simpleProject.png",
-                      fullWidth: 1000,
-                      fullHeight: 924,
-                      aspectRatio: undefined
-                    }}
-                  />
-                </div>
-                <div className={classNames(projectcss.all, sty.column__nRwB3)}>
-                  <Stack__
-                    as={"div"}
-                    hasGap={true}
-                    className={classNames(projectcss.all, sty.freeBox__odKu)}
-                  >
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text___0E3Na
-                      )}
-                    >
-                      {"Powerful suite of tools"}
-                    </div>
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__xfaTm
-                      )}
-                    >
-                      {
-                        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur."
-                      }
-                    </div>
-                    <Bullet
-                      className={classNames(
-                        "__wab_instance",
-                        sty.bullet__ndLJn
-                      )}
-                    />
-
-                    <Bullet
-                      className={classNames(
-                        "__wab_instance",
-                        sty.bullet__fuxqv
-                      )}
-                    />
-
-                    <Bullet
-                      className={classNames(
-                        "__wab_instance",
-                        sty.bullet___1Vtge
-                      )}
-                    />
-
-                    <div
-                      className={classNames(
-                        projectcss.all,
-                        projectcss.__wab_text,
-                        sty.text__nxhd9
-                      )}
-                    >
-                      {
-                        "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore pariatur."
-                      }
-                    </div>
-                    <Stack__
-                      as={"div"}
-                      hasGap={true}
-                      className={classNames(projectcss.all, sty.freeBox__gtsUv)}
-                    >
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__mr2Db
-                        )}
-                        color={"blue"}
-                        submitsForm={true}
-                      >
-                        {"Start free trial"}
-                      </Button>
-                      <Button
-                        className={classNames(
-                          "__wab_instance",
-                          sty.button__anjNs
-                        )}
-                        color={"outlineBlue"}
-                        submitsForm={true}
-                      >
-                        {"View demo"}
-                      </Button>
-                    </Stack__>
-                  </Stack__>
-                </div>
-              </Stack__>
-            </Stack__>
-          </Section>
           <HomeCta
             data-plasmic-name={"homeCta"}
             data-plasmic-override={overrides.homeCta}
